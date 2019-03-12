@@ -1,4 +1,4 @@
-// Type definitions for react-table 6.7
+// Type definitions for react-table 6.9.2
 // Project: https://github.com/react-tools/react-table
 // Definitions by: Roy Xue <https://github.com/royxue>,
 //                 Pavel Sakalo <https://github.com/psakalo>,
@@ -45,9 +45,7 @@ export interface Filter {
 /** NOTE: to many configuration ways (only true values are confusing) */
 export interface SortingRule {
     id: string;
-    sort?: 'desc' | 'asc';
-    asc?: true;
-    desc?: true;
+    desc: boolean;
 }
 
 export interface TableProps<D = any, ResolvedData = D> extends
